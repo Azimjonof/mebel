@@ -1,0 +1,38 @@
+.cards{
+    min-height: 688px;
+    background-color: #3D4A39;
+    .container{
+        h2{
+            font-weight: 600;
+            font-size: 46px;
+            color: white;
+            margin-bottom: 70px;
+            padding-top: 100px;
+            text-align: center;
+        }
+        .cards__wrapper{
+            display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px; 
+        text-align: center; 
+        padding: 20px;
+
+        }
+        .card{
+            p{
+                color: #ffffff4e;
+            }
+
+        }
+    }
+}
+@media (max-width: 400px){
+    .cards__wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px; 
+        text-align: center; 
+        padding: 20px;
+        
+    }
+}
